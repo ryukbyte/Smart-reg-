@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="smart.css">
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form id="registrationForm">
+
+        <div>
+            <label>Name:</label>
+            <input type="text" id="nameInput">
+            <p id="nameError" class="error"></p>
+        </div>
+
+        <div>
+            <label>Email:</label>
+            <input type="text" id="emailInput">
+            <p id="emailError" class="error"></p>
+        </div>
+
+        <div>
+            <label>Password:</label>
+            <input type="password" id="passwordInput">
+            <p id="passwordError" class="error"></p>
+        </div>
+
+        <div>
+            <label>Bio:</label>
+            <textarea id="bioInput"></textarea>
+            <p id="bioCounter">0 / 200 characters</p>
+            <p id="bioError" class="error"></p>
+        </div>
+
+        <button type="submit" id="submitBtn" disabled>Submit</button>
+
+    </form>
+
+    <script src="smart.js"></script>
+</body>
+</html>
